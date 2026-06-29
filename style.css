@@ -1,0 +1,50 @@
+/* @import url('reset.css'); */
+
+img {
+  width: 300px;
+}
+
+/* div { 
+  background-color: aqua;
+} */
+
+#list-title {
+border: solid 1px brown;
+background-color: yellow;
+}
+
+.item {
+  color: red;
+}
+
+h1.main-title {
+  /* background-color: #f2ba61; */
+  background: red;
+  background: linear-gradient(90deg, rgba(242, 186, 97, 1) 0%, rgba(169, 199, 87, 1) 50%, rgba(168, 83, 237, 1) 100%);
+}
+
+.list-wrap > li {
+  background-color: purple;
+}
+
+/* 인접 형제 선택 */
+.top-item ~ li {
+  /* border: 1px solid blue; */
+  margin-top: 20px;
+}
+
+.btn {
+  background: #81ecec;
+  border: none;
+  cursor: pointer;
+  transition: 1s all;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 4px solid red;
+  margin: 20px;
+}
+
+/* 버튼에 마우스를 올렸을 때 스타일 */
+.btn:hover {
+  background: #e84393;  
+}
