@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>입력폼 요소 학습</title>
+  </head>
+  <body>
+    <!-- 다양한 입력 요소 -->
+    <h3>로그인 영역</h3>
+    <form>
+      <label for="user-id">ID:</label>
+      <input
+        type="text"
+        name="user-id"
+        required
+        placeholder="아이디를 입력하세요"
+      /><br />
+      Password:
+      <input
+        type="password"
+        name="user-password"
+        required
+        placeholder="패스워드를 입력하세요"
+      />
+      <!-- 제출 버튼 -->
+      <div>
+        <!-- 방법1 -->
+        <!-- <input type="submit" /> -->
+        <!-- 방법2 -->
+        <button type="submit">로그인</button>
+      </div>
+      <!-- 그외 입력 요소 -->
+      <h3>그외 입력 요소</h3>
+      <!-- 체크박스 -->
+      <h4>취미 선택</h4>
+      <input id="soccer" type="checkbox" name="hobby" value="soccer" />
+      <label for="soccer">축구</label>
+      <input id="baseball" type="checkbox" name="hobby" value="baseball" />
+      <label for="baseball">야구</label>
+      <input id="reels" type="checkbox" name="hobby" value="reels" checked />
+      <label for="reels">릴스보기</label>
+      <input id="sleep" type="checkbox" name="hobby" value="sleep" />
+      <label for="sleep">잠자기</label>
+      <!-- 라디오 버튼 -->
+      <h4>성별 선택</h4>
+      <input id="male" type="radio" name="gender" value="male" />
+      <label for="male">남성</label>
+      <input id="female" type="radio" name="gender" value="female" checked />
+      <label for="female">여성</label>
+      <!-- 드롭다운 -->
+      <h4>드롭다운</h4>
+      <label for="food">음식 선택하기</label>
+      <select name="food" id="food">
+        <option value="pizza">피자</option>
+        <option value="buger">햄버거</option>
+        <option value="pasta">파스타</option>
+      </select>
+    </form>
+  </body>
+</html>
